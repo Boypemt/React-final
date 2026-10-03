@@ -1,4 +1,39 @@
-# Logs
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Next.js Build Outputs & Cache
+/.next/
+/out/
+/build
+/dist
+dist-ssr
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment Variables & Secrets (ป้องกัน API Key รั่วไหล)
+.env
+.env*.local
+*.local
+*.pem
+
+# Testing & Coverage
+/coverage
+.playwright-mcp/
+/.turbo/
+
+# Vercel Deployment
+.vercel
+
+# Debug & Logs
 logs
 *.log
 npm-debug.log*
@@ -7,16 +42,15 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
 
-# Editor directories and files
+# IDE & Editor Specific Files
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj

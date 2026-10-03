@@ -1,0 +1,252 @@
+[
+  {
+    "_id": 4703,
+    "name": "Mickey Mouse",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/2e/Disney_Mickey_Mouse.png",
+    "films": ["Fantasia", "Fun and Fancy Free", "Fantasia 2000", "Saving Mr. Banks"],
+    "shortFilms": ["Steamboat Willie", "The Band Concert", "Once Upon a Studio"],
+    "tvShows": ["The Mickey Mouse Club", "House of Mouse", "Mickey Mouse Clubhouse"],
+    "videoGames": ["Kingdom Hearts III", "Epic Mickey", "Disney Speedstorm"],
+    "parkAttractions": ["Mickey and Minnie's Runaway Railway", "Fantasmic!", "World of Color"]
+  },
+  {
+    "_id": 450,
+    "name": "Baloo",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/31/Profile_-_Baloo.jpeg",
+    "films": ["The Jungle Book", "The Jungle Book 2", "Mickey's Magical Christmas"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["TaleSpin", "Jungle Cubs", "House of Mouse"],
+    "videoGames": ["The Jungle Book (video game)", "Disney Speedstorm", "Disney Emoji Blitz"],
+    "parkAttractions": ["Fantasmic!", "It's a Small World", "Mickey's Jammin' Jungle Parade"]
+  },
+  {
+    "_id": 6222,
+    "name": "Simba",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/c9/Simba_Lion_King.png",
+    "films": ["The Lion King", "The Lion King II: Simba's Pride", "The Lion King 1½"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["Timon & Pumbaa", "The Lion Guard", "House of Mouse"],
+    "videoGames": ["Kingdom Hearts", "Disney Magic Kingdoms", "Disney Speedstorm"],
+    "parkAttractions": ["Festival of the Lion King", "World of Color", "Happily Ever After"]
+  },
+  {
+    "_id": 156,
+    "name": "Aladdin",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/c5/Aladdin_render.png",
+    "films": ["Aladdin", "The Return of Jafar", "Aladdin and the King of Thieves"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["Aladdin (TV series)", "House of Mouse"],
+    "videoGames": ["Kingdom Hearts", "Disney Infinity", "Disney Speedstorm"],
+    "parkAttractions": ["The Magic Carpets of Aladdin", "Fantasmic!", "Mickey's PhilharMagic"]
+  },
+  {
+    "_id": 310,
+    "name": "Ariel",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/e8/Char_49883.jpg",
+    "films": ["The Little Mermaid", "The Little Mermaid II: Return to the Sea"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["The Little Mermaid (TV series)", "House of Mouse"],
+    "videoGames": ["Kingdom Hearts", "Disney Princess: Enchanted Journey"],
+    "parkAttractions": ["Under the Sea: Journey of The Little Mermaid", "Fantasmic!"]
+  },
+  {
+    "_id": 3058,
+    "name": "Hercules",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/7b/Hercules_pose.png",
+    "films": ["Hercules (film)", "Hercules: Zero to Hero"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["Hercules (TV series)", "House of Mouse"],
+    "videoGames": ["Kingdom Hearts", "Disney Heroes: Battle Mode", "Disney Speedstorm"],
+    "parkAttractions": ["Fantasmic!", "World of Color"]
+  },
+  {
+    "_id": 4945,
+    "name": "Mulan",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/90/Profile_-_Mulan.png",
+    "films": ["Mulan", "Mulan II"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["House of Mouse", "Sofia the First"],
+    "videoGames": ["Kingdom Hearts II", "Disney Infinity", "Disney Speedstorm"],
+    "parkAttractions": ["Mulan's Lunar New Year Procession", "Happily Ever After"]
+  },
+  {
+    "_id": 6511,
+    "name": "Stitch",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/0e/Stitch_Lilo_%26_Stitch.png",
+    "films": ["Lilo & Stitch", "Stitch! The Movie", "Lilo & Stitch 2: Stitch Has a Glitch"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["Lilo & Stitch: The Series", "Stitch!", "House of Mouse"],
+    "videoGames": ["Kingdom Hearts II", "Disney Speedstorm", "Disney Dreamlight Valley"],
+    "parkAttractions": ["Stitch's Great Escape!", "Stitch Encounter"]
+  },
+  {
+    "_id": 2099,
+    "name": "Elsa",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/b2/Elsa_Frozen_2.png",
+    "films": ["Frozen", "Frozen II"],
+    "shortFilms": ["Frozen Fever", "Olaf's Frozen Adventure", "Once Upon a Studio"],
+    "tvShows": ["Once Upon a Time"],
+    "videoGames": ["Kingdom Hearts III", "Disney Infinity", "Disney Dreamlight Valley"],
+    "parkAttractions": ["Frozen Ever After", "World of Frozen"]
+  },
+  {
+    "_id": 571,
+    "name": "Belle",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/a/ab/Belle_beauty_and_the_beast.png",
+    "films": ["Beauty and the Beast", "Beauty and the Beast: The Enchanted Christmas"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["House of Mouse", "Sing Me a Story with Belle"],
+    "videoGames": ["Kingdom Hearts", "Disney Speedstorm", "Disney Dreamlight Valley"],
+    "parkAttractions": ["Enchanted Tales with Belle", "Beauty and the Beast Live on Stage"]
+  },
+  {
+    "_id": 7161,
+    "name": "Woody",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/01/Woody_Toy_Story_4.png",
+    "films": ["Toy Story", "Toy Story 2", "Toy Story 3", "Toy Story 4"],
+    "shortFilms": ["Hawaiian Vacation", "Small Fry", "Partysaurus Rex"],
+    "tvShows": ["Toy Story of Terror!", "Toy Story That Time Forgot"],
+    "videoGames": ["Kingdom Hearts III", "Disney Infinity", "Disney Speedstorm"],
+    "parkAttractions": ["Toy Story Mania!", "Slinky Dog Dash", "Toy Story Land"]
+  },
+  {
+    "_id": 1058,
+    "name": "Buzz Lightyear",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/d/dc/Buzz_Toy_Story_4.png",
+    "films": ["Toy Story", "Toy Story 2", "Toy Story 3", "Toy Story 4", "Lightyear"],
+    "shortFilms": ["Hawaiian Vacation", "Small Fry"],
+    "tvShows": ["Buzz Lightyear of Star Command"],
+    "videoGames": ["Kingdom Hearts III", "Disney Infinity", "Disney Speedstorm"],
+    "parkAttractions": ["Buzz Lightyear's Space Ranger Spin", "Astro Blasters"]
+  },
+  {
+    "_id": 5707,
+    "name": "Rapunzel",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/ec/Rapunzel_Tangled.png",
+    "films": ["Tangled"],
+    "shortFilms": ["Tangled Ever After", "Once Upon a Studio"],
+    "tvShows": ["Tangled: The Series", "Sofia the First"],
+    "videoGames": ["Kingdom Hearts III", "Disney Infinity", "Disney Dreamlight Valley"],
+    "parkAttractions": ["Tangled Tree", "Happily Ever After"]
+  },
+  {
+    "_id": 4821,
+    "name": "Moana",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/98/Moana_profile.png",
+    "films": ["Moana", "Moana 2"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": [],
+    "videoGames": ["Disney Infinity 3.0", "Disney Magic Kingdoms", "Disney Dreamlight Valley"],
+    "parkAttractions": ["Journey of Water, Inspired by Moana"]
+  },
+  {
+    "_id": 3612,
+    "name": "Judy Hopps",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/87/Judy_Hopps_Zootopia.png",
+    "films": ["Zootopia", "Zootopia 2"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["Zootopia+"],
+    "videoGames": ["Disney Infinity 3.0", "Disney Heroes: Battle Mode", "Disney Heroes"],
+    "parkAttractions": ["Zootopia: Hot Pursuit"]
+  },
+  {
+    "_id": 516,
+    "name": "Baymax",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/9b/Baymax_Big_Hero_6.png",
+    "films": ["Big Hero 6"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["Big Hero 6: The Series", "Baymax!"],
+    "videoGames": ["Kingdom Hearts III", "Disney Infinity 2.0"],
+    "parkAttractions": ["The Happy Ride with Baymax"]
+  },
+  {
+    "_id": 6433,
+    "name": "Snow White",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/00/Snow_White_character.png",
+    "films": ["Snow White and the Seven Dwarfs"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["House of Mouse"],
+    "videoGames": ["Kingdom Hearts", "Disney Magic Kingdoms"],
+    "parkAttractions": ["Seven Dwarfs Mine Train", "Snow White's Enchanted Wish"]
+  },
+  {
+    "_id": 5369,
+    "name": "Peter Pan",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/08/Peter_Pan_character.png",
+    "films": ["Peter Pan", "Return to Never Land"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["House of Mouse", "Jake and the Never Land Pirates"],
+    "videoGames": ["Kingdom Hearts", "Disney Infinity", "Disney Speedstorm"],
+    "parkAttractions": ["Peter Pan's Flight", "Fantasmic!"]
+  },
+  {
+    "_id": 5350,
+    "name": "Pinocchio",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/77/Pinocchio_disney.png",
+    "films": ["Pinocchio"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["House of Mouse"],
+    "videoGames": ["Kingdom Hearts", "Disney Magic Kingdoms"],
+    "parkAttractions": ["Pinocchio's Daring Journey", "Fantasmic!"]
+  },
+  {
+    "_id": 1345,
+    "name": "Cinderella",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/4/4b/Cinderella_Disney.png",
+    "films": ["Cinderella", "Cinderella II: Dreams Come True", "Cinderella III: A Twist in Time"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["House of Mouse"],
+    "videoGames": ["Kingdom Hearts: Birth by Sleep", "Disney Magic Kingdoms"],
+    "parkAttractions": ["Cinderella Castle", "Prince Charming Regal Carrousel"]
+  },
+  {
+    "_id": 6271,
+    "name": "Sleepy",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/78/Sleepy.png",
+    "films": ["Snow White and the Seven Dwarfs"],
+    "shortFilms": [],
+    "tvShows": ["The 7D", "House of Mouse"],
+    "videoGames": ["Kingdom Hearts: Birth by Sleep"],
+    "parkAttractions": ["Seven Dwarfs Mine Train"]
+  },
+  {
+    "_id": 4478,
+    "name": "Maleficent",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/b3/Maleficent_Sleeping_Beauty.png",
+    "films": ["Sleeping Beauty", "Maleficent", "Maleficent: Mistress of Evil"],
+    "shortFilms": [],
+    "tvShows": ["House of Mouse"],
+    "videoGames": ["Kingdom Hearts", "Disney Villains Challenge", "Disney Magic Kingdoms"],
+    "parkAttractions": ["Fantasmic!"]
+  },
+  {
+    "_id": 3317,
+    "name": "Jafar",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/53/Jafar_Aladdin.png",
+    "films": ["Aladdin", "The Return of Jafar"],
+    "shortFilms": [],
+    "tvShows": ["Aladdin (TV series)", "House of Mouse"],
+    "videoGames": ["Kingdom Hearts", "Disney Heroes: Battle Mode"],
+    "parkAttractions": ["Fantasmic!"]
+  },
+  {
+    "_id": 6098,
+    "name": "Scar",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/1a/Scar_Lion_King.png",
+    "films": ["The Lion King", "The Lion King II: Simba's Pride"],
+    "shortFilms": [],
+    "tvShows": ["Timon & Pumbaa", "The Lion Guard"],
+    "videoGames": ["Kingdom Hearts II", "Disney Heroes: Battle Mode"],
+    "parkAttractions": ["Festival of the Lion King", "Fantasmic!"]
+  },
+  {
+    "_id": 3071,
+    "name": "Hades",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/1b/Hades_Hercules.png",
+    "films": ["Hercules (film)"],
+    "shortFilms": [],
+    "tvShows": ["Hercules (TV series)", "House of Mouse"],
+    "videoGames": ["Kingdom Hearts", "Disney Heroes: Battle Mode", "Disney Speedstorm"],
+    "parkAttractions": ["Fantasmic!", "Villains Grove"]
+  }
+]

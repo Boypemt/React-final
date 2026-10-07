@@ -248,5 +248,255 @@
     "tvShows": ["Hercules (TV series)", "House of Mouse"],
     "videoGames": ["Kingdom Hearts", "Disney Heroes: Battle Mode", "Disney Speedstorm"],
     "parkAttractions": ["Fantasmic!", "Villains Grove"]
+  },
+  {
+    "_id": 256,
+    "name": "Anna",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/0f/Profile_-_Anna.jpeg",
+    "films": ["Frozen", "Frozen II", "Frozen III", "Frozen IV", "Ralph Breaks the Internet"],
+    "shortFilms": ["Frozen Fever", "Olaf's Frozen Adventure", "Once Upon a Snowman", "Once Upon a Studio", "The Simpsons: May the 12th Be With You"],
+    "tvShows": ["It's a Small World: The Animated Series", "Sofia the First", "Frozen: Northern Lights"],
+    "videoGames": ["Frozen: Olaf's Quest", "Frozen Free Fall", "Disney Infinity (series)", "Hidden Worlds", "Disney Magical World 2", "Disney Tsum Tsum (game)", "Disney Emoji Blitz", "Disney Enchanted Tales (game)", "Disney Magic Kingdoms", "Disney Magical Dice", "Kingdom Hearts III", "Disney Getaway Blast", "Disney Sorcerer's Arena", "Disney Wonderful Worlds", "Disney Heroes: Battle Mode", "Disney Mirrorverse", "Disney Dreamlight Valley", "Disney Speedstorm"],
+    "parkAttractions": ["World of Color", "Disney Dreams!", "Celebrate the Magic", "Festival of Fantasy Parade", "Princess Pavilion", "Mickey's Soundsational Parade", "Mickey's Once Upon a Christmastime Parade", "A Christmas Fantasy Parade", "A Frozen Holiday Wish", "Paint the Night", "Fantasmic!", "Frozen Ever After", "Mickey and the Wondrous Book", "Mickey's Royal Friendship Faire", "Frozen: Live at the Hyperion", "Mickey's Storybook Express", "Golden Fairytale Fanfare", "Ignite the Dream: A Nighttime Spectacular of Magic and Light", "Once Upon a Time (fireworks show)", "Happily Ever After", "It's a Small World", "It's a Small World with Groot", "Disney Stars on Parade", "Disney Christmas Stories"]
+  },
+  {
+    "_id": 4994,
+    "name": "Olaf",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/53/Profile_-_Olaf.jpeg",
+    "films": ["Frozen", "Frozen II", "Frozen III", "Frozen IV", "Big Hero 6", "Moana (film)"],
+    "shortFilms": ["Frozen Fever", "Olaf's Frozen Adventure", "At Home With Olaf", "Once Upon a Snowman", "The Simpsons in Plusaversary", "Once Upon a Studio"],
+    "tvShows": ["It's a Small World: The Animated Series", "Sofia the First", "Frozen: Northern Lights", "Olaf Presents"],
+    "videoGames": ["Frozen: Olaf's Quest", "Frozen Free Fall", "Disney Infinity (series)", "Hidden Worlds", "Disney Magical World 2", "Disney Tsum Tsum (game)", "Disney Emoji Blitz", "Disney Magic Kingdoms", "Disney Magical Dice", "Kingdom Hearts III", "Disney Heroes: Battle Mode", "Disney Getaway Blast", "Disney Sorcerer's Arena", "Disney Star Smash", "Disney POP TOWN", "Disney Wonderful Worlds", "Disney Dreamlight Valley", "Disney Mirrorverse", "Disney Speedstorm", "Disney Solitaire"],
+    "parkAttractions": ["World of Color", "Disney Dreams!", "Celebrate the Magic", "Festival of Fantasy Parade", "Mickey's Soundsational Parade", "A Frozen Holiday Wish", "A Christmas Fantasy Parade", "Mickey's Once Upon a Christmastime Parade", "Paint the Night", "Fantasmic!", "Frozen Ever After", "Mickey and the Wondrous Book", "Mickey's Royal Friendship Faire", "Frozen: Live at the Hyperion", "Mickey and the Magician", "Once Upon a Time (fireworks show)", "Happily Ever After", "It's a Small World", "It's a Small World with Groot", "Main Street Electrical Parade", "Drawn To Life", "Disney Stars on Parade", "Disney Christmas Stories", "Magic Happens", "Wonderful World of Animation", "Anna and Elsa's Frozen Journey", "Minnie's Musical Moment"]
+  },
+  {
+    "_id": 4324,
+    "name": "Maui",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/6f/Profile_-_Maui.jpeg",
+    "films": ["Moana (film)", "Moana 2"],
+    "shortFilms": ["Gone Fishing", "Once Upon a Studio"],
+    "tvShows": ["Chibi Tiny Tales"],
+    "videoGames": ["Moana: Island Life", "Disney Emoji Blitz", "Moana: Rhythm Run", "Disney Crossy Road", "Disney Tsum Tsum", "Disney Heroes: Battle Mode", "Disney Magic Kingdoms", "Disney Sorcerer's Arena", "Disney Getaway Blast", "Disney Mirrorverse", "Disney Dreamlight Valley", "Disney Speedstorm", "Disney Solitaire"],
+    "parkAttractions": ["Summer Blast", "Magic Happens", "Disney Harmony in Color! Parade"]
+  },
+  {
+    "_id": 2403,
+    "name": "Flynn Rider",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/84/Profile_-_Flynn_Rider.jpeg",
+    "films": ["Tangled", "Tangled: Before Ever After"],
+    "shortFilms": ["Tangled Ever After", "Chibi Tiny Tales", "Once Upon a Studio"],
+    "tvShows": ["Tangled: The Series"],
+    "videoGames": ["Tangled (video game)", "Disney Princess Enchanting Storybooks", "Hidden Worlds", "Disney Magical World 2", "Disney Crossy Road", "Disney Enchanted Tales (game)", "Disney Magic Kingdoms", "Disney Emoji Blitz", "Kingdom Hearts III", "Disney Heroes: Battle Mode", "Disney Sorcerer's Arena", "Disney My Little Doll", "Disney Solitaire"],
+    "parkAttractions": ["World of Color", "The Golden Mickeys", "Mickey and the Magical Map", "Disney Dreams", "Celebrate the Magic", "Festival of Fantasy Parade", "Fantasmic!", "La Forêt de l'Enchantement: Une aventure musicale Disney", "Mickey's Royal Friendship Faire", "Voyage to the Crystal Grotto", "Mickey's Storybook Express", "Tangled: The Musical", "Happily Ever After (fireworks show)", "Main Street Electrical Parade", "Rapunzel's Lantern Festival"]
+  },
+  {
+    "_id": 5195,
+    "name": "Lilo Pelekai",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/1f/Profile_-_Lilo.png",
+    "films": ["Lilo & Stitch", "Stitch! The Movie", "Lilo & Stitch 2: Stitch Has a Glitch", "Once Upon a Halloween", "Leroy & Stitch"],
+    "shortFilms": ["Once Upon a Studio", "The Simpsons: May the 12th Be With You"],
+    "tvShows": ["Lilo & Stitch: The Series", "Stitch!", "Stitch & Ai", "A Poem Is...", "Chibi Tiny Tales"],
+    "videoGames": ["Lilo & Stitch (Game Boy Advance)", "Lilo & Stitch: Trouble in Paradise", "Lilo & Stitch 2: Hämsterviel Havoc", "Disney Move", "Disney Friends", "Meteos: Disney Magic", "Disney Magical World", "Disney Magical World 2", "Disney Infinity (series)", "Disney Tsum Tsum (game)", "Disney Crossy Road", "Disney Emoji Blitz", "Disney Magic Kingdoms", "Disney Getaway Blast", "Disney Heroes: Battle Mode", "Disney Star Smash", "Disney Speedstorm", "Disney Solitaire"],
+    "parkAttractions": ["It's a Small World", "It's a Small World Holiday", "It's a Small World with Groot", "Fantasmic!", "Celebrate a Dreams Come True Parade", "Disney Stars and Motorcars Parade", "Disney's Easter Wonderland", "World of Color", "Stitch Encounter", "Re-Villains! Halloween Parade", "Celebrate the Magic", "Wonderful World of Animation", "Jubilation!", "Happiness is Here Parade", "Main Street Electrical Parade", "Wondrous Journeys", "Disney Christmas Stories"]
+  },
+  {
+    "_id": 544,
+    "name": "Beast",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/84/Profile_-_Beast.jpeg",
+    "films": ["Beauty and the Beast (1991 film)", "Beauty and the Beast: The Enchanted Christmas", "Beauty and the Beast: Belle's Magical World", "Mickey's Magical Christmas: Snowed in at the House of Mouse", "Mickey's House of Villains"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["House of Mouse", "Beauty and the Beast: A 30th Celebration", "Chibi Tiny Tales"],
+    "videoGames": ["Beauty and the Beast (video game)", "Beauty and the Beast: Roar of the Beast", "Beauty and the Beast: Magical Ballroom", "Beauty and the Beast: A Board Game Adventure", "Kingdom Hearts (series)", "Kinect: Disneyland Adventures", "Epic Mickey: Power of Illusion", "Hidden Worlds", "Disney Tsum Tsum (game)", "Disney Emoji Blitz", "Disney Enchanted Tales (game)", "Disney Crossy Road", "Disney Magic Kingdoms", "Disney Magical Dice", "Disney Heroes: Battle Mode", "Disney Getaway Blast", "Disney Princess Majestic Quest", "Disney Sorcerer's Arena", "Disney Melee Mania", "Disney POP TOWN", "Disney Mirrorverse", "Disney Dreamlight Valley", "Disney Speedstorm", "Disney Solitaire"],
+    "parkAttractions": ["Fantasmic!", "Minnie's Tiara of Dreams", "World of Color", "Celebrate a Dreams Come True Parade", "Walt Disney's Parade of Dreams", "Mickey's Once Upon a Christmastime Parade", "A Christmas Fantasy Parade", "Jubilation!", "The Golden Mickeys", "Festival of Fantasy Parade", "Paint the Night Parade", "Mickey and the Magician", "Wonderful World of Animation", "Disney Christmas Stories", "Main Street Electrical Parade", "Enchanted Tale of Beauty and the Beast"]
+  },
+  {
+    "_id": 373,
+    "name": "Aurora",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/2a/Profile_-_Aurora.jpeg",
+    "films": ["Sleeping Beauty", "Mickey's Magical Christmas: Snowed in at the House of Mouse", "Mickey's House of Villains", "Disney Princess Enchanted Tales: Follow Your Dreams", "Ralph Breaks the Internet"],
+    "shortFilms": ["Once Upon a Studio", "The Simpsons: May the 12th Be With You", "The Simpsons: The Most Wonderful Time of the Year"],
+    "tvShows": ["House of Mouse", "A Poem Is...", "Sofia the First", "Chibi Tiny Tales"],
+    "videoGames": ["Kingdom Hearts (series)", "Disney Princess: Royal Adventure", "Disney Princess: Magical Jewels", "Kinect: Disneyland Adventures", "Epic Mickey: Power of Illusion", "Disney Tsum Tsum (game)", "Disney Infinity: 2.0 Edition", "Disney Magic Kingdoms", "Disney Emoji Blitz", "Disney Getaway Blast", "Disney Heroes: Battle Mode", "Disney Mirrorverse", "Disney My Little Doll", "Disney Speedstorm", "Disney Solitaire"],
+    "parkAttractions": ["Sleeping Beauty Castle", "Le Château de la Belle au Bois Dormant", "Fantasmic!", "Dream Along With Mickey", "World of Color", "Cinderella Castle Mystery Tour", "Mickey's Soundsational Parade", "Walt Disney's Parade of Dreams", "The Golden Mickeys", "Mickey's Once Upon a Christmastime Parade", "A Christmas Fantasy Parade", "Jubilation!", "Celebrate a Dreams Come True Parade", "Princess Fairytale Hall", "Parade of the Stars", "Disney Dreams!", "Happiness is Here Parade", "Dreaming Up!", "Nightfall Glow", "Gardens of Wonder", "Wondrous Journeys", "Minnie's Tiara of Dreams"]
+  },
+  {
+    "_id": 5379,
+    "name": "Pocahontas",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/7b/Profile_-_Pocahontas.jpeg",
+    "films": ["Pocahontas (film)", "Pocahontas II: Journey to a New World", "Ralph Breaks the Internet"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["House of Mouse", "A Poem Is...", "Sofia the First"],
+    "videoGames": ["Pocahontas (video game)", "Animated StoryBook: Pocahontas", "Disney Emoji Blitz", "Disney Magic Kingdoms", "Disney Sorcerer's Arena", "PAC-MAN: Ralph Breaks the Maze", "Disney Heroes: Battle Mode", "Disney Solitaire"],
+    "parkAttractions": ["Pocahontas and her Forest Friends", "Fantasmic!", "World of Color", "It's a Small World", "It's a Small World Holiday", "Jubilation!", "Sorcerers of the Magic Kingdom", "It's a Small World", "The Golden Mickeys", "Celebrate the Magic", "Mickey and the Magical Map", "Pocahontas Indian Village", "The Spirit of Pocahontas", "Pocahontas le Spectacle", "La Forêt de l'Enchantement: Une aventure musicale Disney", "Dreams Take Flight"]
+  },
+  {
+    "_id": 6610,
+    "name": "Tarzan",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/2e/Profile_-_Tarzan.png",
+    "films": ["Tarzan (film)", "Tarzan II", "Tarzan & Jane", "Once Upon a Halloween"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["The Legend of Tarzan"],
+    "videoGames": ["Tarzan (video game)", "Tarzan: Untamed", "Disney's Extreme Skate Adventure", "Kingdom Hearts (game)", "Disney Heroes: Battle Mode"],
+    "parkAttractions": ["Tarzan Rocks!", "Tarzan's Treehouse", "The Golden Mickeys", "World of Color", "Fantasmic!", "Parade of the Stars", "La Forêt de l'Enchantement: Une aventure musicale Disney", "Tarzan: Call of the Jungle", "Happily Ever After (fireworks show)"]
+  },
+  {
+    "_id": 6776,
+    "name": "Tinker Bell",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/76/Profile_-_Tinker_Bell.jpeg",
+    "films": ["Peter Pan (film)", "Return to Never Land", "Mickey's Magical Christmas: Snowed in at the House of Mouse", "Mickey's House of Villains", "Tinker Bell (film)", "Tinker Bell and the Lost Treasure", "Tinker Bell and The Great Fairy Rescue", "The Pixie Hollow Games", "Secret of the Wings", "Jake and the Never Land Pirates: Never Land Rescue", "Jake and the Never Land Pirates: Battle for the Book", "The Pirate Fairy", "Tinker Bell and the Legend of the NeverBeast"],
+    "shortFilms": ["Pixie Preview", "Pixie Hollow Bake Off", "Electric Holiday", "Once Upon a Studio"],
+    "tvShows": ["Walt Disney anthology series", "House of Mouse", "A Poem Is...", "Jake and the Never Land Pirates"],
+    "videoGames": ["Mickey Mousecapade", "The Jungle Book (video game)", "Disney's Villains' Revenge", "Peter Pan: Adventures in Never Land", "Peter Pan: The Legend of Never Land", "Kingdom Hearts (series)", "Disney Move", "Disney Friends", "Just Dance: Disney Party", "Disney Universe", "Kinect: Disneyland Adventures", "Disneyland Explorer", "Epic Mickey: Power of Illusion", "Disney Infinity (series)", "Hidden Worlds", "Disney's Party", "Disney Tsum Tsum (game)", "Disney Emoji Blitz", "Disney Magic Kingdoms", "Disney Magical Dice", "Disney Sorcerer's Arena", "Disney POP TOWN", "Disney Mirrorverse", "Disney SpellStruck", "Disney Heroes: Battle Mode", "Disney Solitaire"],
+    "parkAttractions": ["Jubilation!", "Peter Pan's Flight", "Fantasmic!", "Mickey's PhilharMagic", "Magic, Music and Mayhem", "Remember... Dreams Come True", "Pixie Hollow", "Mickey's Soundsational Parade", "Main Street Electrical Parade", "SpectroMagic", "Wishes: A Magical Gathering of Disney Dreams", "Walt Disney's Parade of Dreams", "The American Adventure", "Soarin' Over California", "Celebrate the Magic", "Disney Dreams!", "Festival of Fantasy Parade", "Paint the Night Parade", "Soarin' Around the World", "Happiness is Here Parade", "Disney Harmony in Color! Parade", "Fairy Tinker Bell's Busy Buggies", "Peter Pan's Never Land Adventure"]
+  },
+  {
+    "_id": 7316,
+    "name": "Winnie the Pooh",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/03/Profile_-_Winnie_the_Pooh.png",
+    "films": ["The Many Adventures of Winnie the Pooh", "Cartoon All-Stars to the Rescue", "Pooh's Grand Adventure: The Search for Christopher Robin", "Winnie the Pooh: Seasons of Giving", "The Tigger Movie", "Mickey's Magical Christmas: Snowed in at the House of Mouse", "The Book of Pooh: Stories from the Heart", "Winnie the Pooh: A Very Merry Pooh Year", "Mickey's House of Villains", "Piglet's Big Movie", "Winnie the Pooh: Springtime with Roo", "Pooh's Heffalump Movie", "Pooh's Heffalump Halloween Movie", "Pooh's Super Sleuth Christmas Movie", "Tigger & Pooh and a Musical Too", "Super Duper Super Sleuths", "Winnie the Pooh (film)", "Christopher Robin (film)"],
+    "shortFilms": ["Winnie the Pooh and the Honey Tree", "Winnie the Pooh and the Blustery Day", "Winnie the Pooh and Tigger Too", "Winnie the Pooh Discovers the Seasons", "Winnie the Pooh and a Day for Eeyore", "Cartoon All-Stars to the Rescue", "Once Upon a Studio"],
+    "tvShows": ["Walt Disney anthology series", "Welcome to Pooh Corner", "The New Adventures of Winnie the Pooh", "House of Mouse", "The Book of Pooh", "My Friends Tigger and Pooh", "A Poem Is...", "Tales of Friendship with Winnie the Pooh", "Doc McStuffins", "Playdate with Winnie the Pooh", "Me & Winnie the Pooh"],
+    "videoGames": ["Animated StoryBook: Winnie the Pooh and the Honey Tree", "Ready to Read with Pooh", "Ready for Math with Pooh", "Animated StoryBook: Winnie the Pooh and Tigger Too", "Winnie the Pooh: Adventures in the Hundred Acre Wood", "Tigger's Honey Hunt", "Kingdom Hearts (series)", "Winnie The Pooh's Rumbly Tumbly Adventure", "Disney Friends", "Meteos: Disney Magic", "Kinect: Disneyland Adventures", "Disney Infinity (series)", "Disney Tsum Tsum (game)", "Disney Emoji Blitz", "Disney Magical Dice", "Disney Magic Kingdoms", "Disney Heroes: Battle Mode", "Disney Solitaire"],
+    "parkAttractions": ["The Many Adventures of Winnie the Pooh (attraction)", "Pooh's Hunny Hunt", "Mickey Mouse Revue", "Fantasmic!", "Main Street Electrical Parade", "Celebrate A Dreams Come True Parade", "Jubilation!", "Once Upon a Time (fireworks show)", "Flights of Fantasy Parade", "Mickey's Boo-to-You Halloween Parade", "Mickey's Once Upon a Christmastime Parade", "Disney Stars and Motorcars Parade", "Happiness is Here Parade", "Light Magic", "A Christmas Fantasy Parade", "Wonderful World of Animation", "Wondrous Journeys", "Vanellope's Sweet Pop World"]
+  },
+  {
+    "_id": 6749,
+    "name": "Tigger",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/60/Profile_-_Tigger.png",
+    "films": ["The Many Adventures of Winnie the Pooh", "Pooh's Grand Adventure: The Search for Christopher Robin", "Winnie the Pooh: Seasons of Giving", "Cartoon All-Stars to the Rescue", "The Tigger Movie", "Mickey's Magical Christmas: Snowed in at the House of Mouse", "The Book of Pooh: Stories from the Heart", "Winnie the Pooh: A Very Merry Pooh Year", "Mickey's House of Villains", "Piglet's Big Movie", "Winnie the Pooh: Springtime with Roo", "Pooh's Heffalump Movie", "Pooh's Heffalump Halloween Movie", "Pooh's Super Sleuth Christmas Movie", "Tigger & Pooh and a Musical Too", "Super Duper Super Sleuths", "Winnie the Pooh (film)", "Christopher Robin (film)", "Chip 'n Dale Rescue Rangers (film)"],
+    "shortFilms": ["Winnie the Pooh and the Honey Tree", "Winnie the Pooh and the Blustery Day", "Winnie the Pooh and Tigger Too", "Winnie the Pooh and a Day for Eeyore", "Once Upon a Studio"],
+    "tvShows": ["The Mouse Factory", "Welcome to Pooh Corner", "The New Adventures of Winnie the Pooh", "House of Mouse", "The Book of Pooh", "My Friends Tigger & Pooh", "Tales of Friendship with Winnie the Pooh", "Doc McStuffins", "The Wonderful Spring of Mickey Mouse", "Playdate with Winnie the Pooh", "Me & Winnie the Pooh"],
+    "videoGames": ["Tigger's Family Tree 3D Adventure", "Tigger's Honey Hunt", "Kingdom Hearts (series)", "Piglet's Big Game", "Winnie The Pooh's Rumbly Tumbly Adventure", "Disney Friends", "Kinect: Disneyland Adventures", "Winnie the Pooh: Adventures in the Hundred Acre Wood", "Disney Infinity (series)", "Disney Tsum Tsum (game)", "Disney Emoji Blitz", "Disney Magic Kingdoms", "Disney Heroes: Battle Mode", "Disney Star Smash", "Disney POP TOWN", "Disney Sorcerer's Arena", "Disney Mirrorverse"],
+    "parkAttractions": ["The Many Adventures of Winnie the Pooh (attraction)", "Pooh's Hunny Hunt", "World of Color", "Fantasmic!", "Main Street Electrical Parade", "Mickey's Boo-to-You Halloween Parade", "Mickey's Once Upon a Christmastime Parade", "Light Magic", "A Christmas Fantasy Parade", "Parade of the Stars", "Disney's Easter Wonderland", "Paint the Night Parade", "Happiness is Here Parade", "Garden of the Twelve Friends", "Dreaming Up!", "Vanellope's Sweet Pop World"]
+  },
+  {
+    "_id": 2755,
+    "name": "Goofy",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/e5/Goofy.png",
+    "films": ["The Reluctant Dragon", "Saludos Amigos", "Fun and Fancy Free", "Who Framed Roger Rabbit", "The Little Mermaid (1989 film)", "Disney's Sing-Along Songs: The Twelve Days of Christmas", "A Goofy Movie", "An Extremely Goofy Movie", "Mickey's Magical Christmas: Snowed in at the House of Mouse", "Mickey's Once Upon a Christmas", "Mickey's House of Villains", "Aladdin (film)", "Mickey, Donald, Goofy: The Three Musketeers", "The Lion King 1½", "Mickey's Twice Upon a Christmas", "Saving Mr. Banks", "Chip 'n Dale Rescue Rangers (film)"],
+    "shortFilms": [],
+    "tvShows": ["Walt Disney anthology series", "The Mickey Mouse Club", "The Mouse Factory", "Goof Troop", "Raw Toonage", "Bonkers", "Mickey's Fun Songs", "Mickey Mouse Works", "House of Mouse", "Mickey Mouse Clubhouse", "Have a Laugh!", "Mickey's Mousekersize (short series)", "A Poem Is...", "Minnie's Bow-Toons", "Mickey Mouse (TV series)", "Mickey Mouse Mixed-Up Adventures", "Mickey Go Local", "DuckTales (2017 series)", "It's a Dog's Life with Bill Farmer", "The Wonderful World of Mickey Mouse", "Mickey Mouse Funhouse", "Broken Karaoke", "Mickey Saves Christmas", "Chibi Tiny Tales", "Chip 'n' Dale: Park Life", "Mickey Mouse Clubhouse+"],
+    "videoGames": ["Adventures in the Magic Kingdom", "World of Illusion Starring Mickey Mouse and Donald Duck", "Goof Troop (video game)", "Goofy's Hysterical History Tour", "Mickey's Racing Adventure", "Disney's Extremely Goofy Skateboarding", "Mickey's Speedway USA", "Donald Duck no Mahô no Bôshi", "QuackShot", "Disney Party", "Kingdom Hearts (series)", "Disney Golf", "Disney TH!NK Fast", "Kinect: Disneyland Adventures", "Epic Mickey: Power of Illusion", "Disney Magic Kingdoms", "Disney Magical World", "Disney Magical World 2", "Disney Infinity (series)", "Disney Tsum Tsum (game)", "Disney Crossy Road", "Disney Emoji Blitz", "Disney Heroes: Battle Mode", "Disney Getaway Blast", "Disney Mirrorverse", "Disney All-Star Racers", "Disney Sorcerer's Arena", "Disney All-Star Party", "Disney Dreamlight Valley", "Disney Speedstorm"],
+    "parkAttractions": ["Goofy's Playhouse", "Fantasmic!", "Mickey and Minnie's Runaway Railway", "Move It! Shake It! MousekeDance It! Street Party", "Mickey's PhilharMagic", "Dream Along With Mickey", "Goofy's Sky School", "Goofy's Barnstormer", "The Great Goofini", "Goofy About Health", "Mickey's Soundsational Parade", "Mickey Mouse Revue", "Main Street Electrical Parade", "SpectroMagic", "Midship Detective Agency", "The Golden Mickeys", "Mickey & Duffy's Spring Voyage", "Parade of the Stars", "Festival of Fantasy Parade", "Paint the Night Parade", "World of Color"]
+  },
+  {
+    "_id": 1947,
+    "name": "Donald Duck",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/a/ab/Donald_Duck_Disney_1.png",
+    "films": ["The Reluctant Dragon", "Saludos Amigos", "The Three Caballeros", "Fun and Fancy Free", "Melody Time", "Where the Toys Come From", "Who Framed Roger Rabbit", "The Little Mermaid (1989 film)", "DuckTales the Movie: Treasure of the Lost Lamp", "Disney's Sing-Along Songs: The Twelve Days of Christmas", "A Goofy Movie", "James and the Giant Peach", "Mickey's Once Upon a Christmas", "Fantasia 2000", "Mickey's Magical Christmas: Snowed in at the House of Mouse", "Mickey's House of Villains", "Once Upon a Halloween", "The Lion King 1½", "Mickey, Donald, Goofy: The Three Musketeers", "Mickey's Twice Upon a Christmas", "Saving Mr. Banks", "Luca", "Pinocchio (2022 film)"],
+    "shortFilms": [],
+    "tvShows": ["Walt Disney anthology series", "The Mickey Mouse Club", "The Mouse Factory", "Adventures of the Gummi Bears", "DuckTales", "Goof Troop", "Bill Nye the Science Guy", "Bonkers", "Mickey's Fun Songs", "Aladdin (TV series)", "Gargoyles", "Quack Pack", "101 Dalmatians: The Series", "Mickey Mouse Works", "House of Mouse", "Mickey Mouse Clubhouse", "Have a Laugh!", "Imagination Movers", "Mickey Mousekersize", "A Poem Is...", "Mickey Mouse (TV series)", "Stitch!", "Minnie's Bow-Toons", "It's a Small World: The Animated Series", "Mickey Mouse Mixed-Up Adventures", "DuckTales (2017 series)", "Legend of the Three Caballeros", "Mickey Go Local", "The Wonderful World of Mickey Mouse", "Chip 'n' Dale: Park Life", "Mickey Mouse Funhouse", "Broken Karaoke", "Chibiverse", "How NOT to Draw", "wikipedia:Hot Ones", "Mickey Mouse Clubhouse+"],
+    "videoGames": ["Adventures in the Magic Kingdom", "QuackShot", "The Lucky Dime Caper starring Donald Duck", "Illusion (series)", "Deep Duck Trouble", "Maui Mallard in Cold Shadow", "Donald Duck no Mahô no Bôshi", "Donald Duck: Goin' Quackers!", "Kingdom Hearts (series)", "Disney Move", "PK: Out of the Shadows", "Kinect: Disneyland Adventures", "Epic Mickey: Power of Illusion", "Disney Magic Kingdoms", "Disney Magical World", "Disney Magical World 2", "Disney Infinity (series)", "Disney Tsum Tsum (game)", "Disney Crossy Road", "Disney Emoji Blitz", "Disney Magical Dice", "Disney Heroes: Battle Mode", "Disney All-Star Racers", "Disney All-Star Party", "Disney Mirrorverse", "Disney Dreamlight Valley", "Disney Speedstorm"],
+    "parkAttractions": ["Fantasmic!", "Move It! Shake It! MousekeDance It! Street Party", "Mickey's Philharmagic", "Mickey Mouse Revue", "Mickey and Minnie's Runaway Railway", "Dream Along With Mickey", "Gran Fiesta Tour Starring the Three Caballeros", "Mickey's Soundsational Parade", "Main Street Electrical Parade", "One Man's Dream II: The Magic Lives On!", "Miss Daisy", "It's a Small World", "It's a Small World Holiday", "It's a Small World with Groot", "Midship Detective Agency", "The AquaDuck", "My Friend Duffy", "Parade of the Stars", "The Golden Mickeys", "Festival of Fantasy Parade", "Paint the Night Parade", "World of Color", "Roger Rabbit's Car Toon Spin"]
+  },
+  {
+    "_id": 4704,
+    "name": "Minnie Mouse",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/67/Minnie_Mouse.png",
+    "films": ["Mickey's Once Upon a Christmas", "Mickey's Magical Christmas: Snowed in at the House of Mouse", "Mickey's House of Villains", "Mickey, Donald, Goofy: The Three Musketeers", "Mickey's Twice Upon a Christmas"],
+    "shortFilms": [],
+    "tvShows": ["Walt Disney anthology series", "The Mickey Mouse Club", "The Mouse Factory", "Mickey's Fun Songs", "Mickey Mouse Works", "House of Mouse", "Mickey Mouse Clubhouse", "Have a Laugh!", "Mickey's Mousekersize", "A Poem Is...", "Minnie's Bow-Toons", "Mickey Mouse (TV series)", "Mickey Mouse Mixed-Up Adventures", "Mickey Go Local", "The Wonderful World of Mickey Mouse", "Mickey Mouse Funhouse"],
+    "videoGames": ["Mickey Mousecapade", "Illusion (series)", "The Magical Quest starring Mickey Mouse", "Mickey's Ultimate Challenge", "Magical Tetris Challenge", "Mickey's Speedway USA", "Kingdom Hearts (series)", "Disney's Party", "Disney's Hide & Sneak", "Disney Th!nk Fast", "Kinect: Disneyland Adventures", "Epic Mickey: Power of Illusion", "Mickey's Racing Adventure", "Disney Magic Kingdoms", "Disney Magical World", "Disney Magical World 2", "Disney Infinity (series)", "Disney Tsum Tsum (game)", "Disney Magical Dice", "Disney Crossy Road", "Disney Emoji Blitz", "Disney Heroes: Battle Mode", "Disney Getaway Blast", "Disney All-Star Racers", "Disney Star Smash", "Disney POP TOWN", "Disney All-Star Party", "Disney Mirrorverse", "Disney Dreamlight Valley", "Disney Speedstorm"],
+    "parkAttractions": ["Minnie's House", "Mickey and Minnie's Runaway Railway", "Minnie's Wonderful Christmastime Fireworks", "Fantasmic!", "Mickey's PhilharMagic", "Mickey's Gift of Dreams", "Mickey's Soundsational Parade", "SpectroMagic", "Main Street Electrical Parade", "Celebrate a Dreams Come True Parade", "Mickey Mouse Revue", "Minnie Oh! Minnie!", "My Friend Duffy", "Mickey & Duffy's Spring Voyage", "Parade of the Stars", "The Golden Mickeys", "Festival of Fantasy Parade", "Paint the Night", "World of Color", "Minnie's Style Studio", "We Love Mickey!", "Minnie's Tiara of Dreams", "Minnie's Musical Moment", "Mickey Mouse Clubhouse+"]
+  },
+  {
+    "_id": 2607,
+    "name": "Genie",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/92/Profile_-_Genie.jpeg",
+    "films": ["Aladdin (film)", "The Return of Jafar", "Aladdin and the King of Thieves", "Mickey's Magical Christmas: Snowed in at the House of Mouse", "Mickey's House of Villains"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["Aladdin (TV series)", "Great Minds Think 4 Themselves", "Hercules (TV series)", "House of Mouse"],
+    "videoGames": ["Aladdin (video game)", "Disney's ReadingQuest With Aladdin", "Disney's MathQuest With Aladdin", "Disney's Aladdin in Nasira's Revenge", "Kingdom Hearts (series)", "Disney TH!NK Fast", "Kinect: Disneyland Adventures", "Disney Princess Enchanting Storybooks", "Epic Mickey: Power of Illusion", "Disney Infinity (series)", "Disney Magical World", "disney:Hidden Worlds", "Disney Villains Challenge", "Disney Tsum Tsum (game)", "Disney Emoji Blitz", "Disney Crossy Road", "Disney Magic Kingdoms", "Disney Heroes: Battle Mode", "Disney Sorcerer's Arena", "Disney Getaway Blast", "Disney Mirrorverse", "Disney Speedstorm", "Disney SpellStruck"],
+    "parkAttractions": ["Fantasmic!", "Wishes: A Magical Gathering of Disney Dreams", "SpectroMagic", "The Magic Lamp Theater", "Mickey's Soundsational Parade", "Aladdin: A Musical Spectacular", "World of Color", "It's a Small World", "Sorcerers of the Magic Kingdom", "Celebrate a Dreams Come True Parade", "Main Street Electrical Parade", "Light Magic", "A Christmas Fantasy Parade", "Paint the Night Parade", "Mickey and the Wondrous Book", "Voyage to the Crystal Grotto", "Ignite the Dream: A Nighttime Spectacular of Magic and Light", "Mickey and the Magician", "Cinderella's Surprise Celebration", "Happily Ever After (fireworks show)", "Wonderful World of Animation", "Happiness is Here Parade", "Drawn To Life"]
+  },
+  {
+    "_id": 3389,
+    "name": "Jasmine",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/cd/Profile_-_Jasmine.jpeg",
+    "films": ["Aladdin (film)", "The Return of Jafar", "Aladdin and the King of Thieves", "Mickey's Magical Christmas: Snowed in at the House of Mouse", "Mickey's House of Villains", "Disney Princess Enchanted Tales: Follow Your Dreams", "Ralph Breaks the Internet"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["Aladdin (TV series)", "Hercules (TV series)", "House of Mouse", "Sofia the First", "A Poem Is..."],
+    "videoGames": ["Aladdin (video game)", "Disney's Aladdin in Nasira's Revenge", "Disney's ReadingQuest With Aladdin", "Disney's MathQuest With Aladdin", "Kingdom Hearts (series)", "Disney Move", "Disney Princess: Royal Adventure", "Disney Princess: Magical Jewels", "Disney Princess: Enchanted Journey", "Disney Princess Enchanting Storybooks", "Disney Universe", "Kinect: Disneyland Adventures", "Epic Mickey: Power of Illusion", "Disney Infinity (series)", "Disney Magical World", "Hidden Worlds", "Disney Tsum Tsum (game)", "Disney Crossy Road", "Disney Enchanted Tales (game)", "Disney Emoji Blitz", "Disney Magic Kingdoms", "Disney Magical World 2", "Disney Magical Dice", "Disney Sorcerer's Arena", "Disney Heroes: Battle Mode", "Disney Princess Majestic Quest", "Disney Getaway Blast", "PAC-MAN: Ralph Breaks the Maze", "Disney Star Smash", "Disney Melee Mania", "w:c:justdance:Just Dance 2016", "w:c:justdance:Just Dance+", "Disney Speedstorm", "Disney Solitaire"],
+    "parkAttractions": ["Mickey's PhilharMagic", "Fantasmic!", "World of Color", "It's a Small World", "It's a Small World Holiday", "It's a Small World with Groot", "Disney's Fantillusion", "Mickey's Boo-to-You Halloween Parade", "Mickey's Once Upon a Christmastime Parade", "The Magic Carpets of Aladdin", "Princess Fairytale Hall", "A Christmas Fantasy Parade", "Mickey and the Wondrous Book", "Golden Fairytale Fanfare", "Happily Ever After (fireworks show)", "Sindbad's Storybook Voyage", "Main Street Electrical Parade", "Happiness is Here Parade", "Dreaming Up!", "Nightfall Glow", "Disney Harmony in Color! Parade", "Minnie's Tiara of Dreams"]
+  },
+  {
+    "_id": 4710,
+    "name": "Mowgli",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/3a/Profile_-_Mowgli.jpeg",
+    "films": ["The Jungle Book", "The Jungle Book 2", "Mickey's Magical Christmas: Snowed in at the House of Mouse"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["House of Mouse"],
+    "videoGames": ["The Jungle Book (video game)", "The Jungle Book Rhythm n' Groove", "Kinect: Disneyland Adventures", "Disney Universe", "Disney Crossy Road", "Disney Magic Kingdoms", "Just Dance: Disney Party", "Disney Emoji Blitz", "Disney Speedstorm", "Disney Solitaire"],
+    "parkAttractions": ["Jubilation!", "It's a Small World", "It's a Small World with Groot", "Fantasmic!", "World of Color", "Happily Ever After (fireworks show)", "Main Street Electrical Parade", "Wondrous Journeys"]
+  },
+  {
+    "_id": 6737,
+    "name": "Tiana",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/f/fa/Profile_-_Tiana.jpeg",
+    "films": ["The Princess and the Frog", "Ralph Breaks the Internet", "LEGO Disney Princess: The Castle Quest"],
+    "shortFilms": ["Electric Holiday", "Once Upon a Studio"],
+    "tvShows": ["A Poem Is...", "Sofia the First"],
+    "videoGames": ["The Princess and the Frog (video game)", "Disney Princess Enchanting Storybooks", "Disney Universe", "Kinect: Disneyland Adventures", "Disney Princess: My Fairytale Adventure", "Epic Mickey: Power of Illusion", "Disney Tsum Tsum (game)", "Disney Emoji Blitz", "Disney Magic Kingdoms", "Disney Sorcerer's Arena", "Disney Star Smash", "Disney Mirrorverse", "Disney SpellStruck", "Disney Heroes: Battle Mode", "Disney Dreamlight Valley"],
+    "parkAttractions": ["World of Color", "Mickey's Soundsational Parade", "Fantasmic!", "Sorcerers of the Magic Kingdom", "Mickey's Once Upon a Christmastime Parade", "A Christmas Fantasy Parade", "Disney's Once Upon a Dream Parade", "Celebrate a Dreams Come True Parade", "Mickey and the Magical Map", "Princess Fairytale Hall", "Festival of Fantasy Parade", "Mickey and the Wondrous Book", "Mickey's Royal Friendship Faire", "Happily Ever After (fireworks show)", "Tiana's Bayou Adventure", "Wonderful World of Animation"]
+  },
+  {
+    "_id": 1975,
+    "name": "Dumbo",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/e2/Profile_-_Dumbo.jpg",
+    "films": ["Dumbo (1941 film)", "Who Framed Roger Rabbit", "Mickey's Magical Christmas: Snowed in at the House of Mouse", "The Lion King 1½", "Ralph Breaks the Internet"],
+    "shortFilms": ["Once Upon a Studio", "The Simpsons: May the 12th Be With You"],
+    "tvShows": ["Walt Disney anthology series", "The Mickey Mouse Club", "Dumbo's Circus", "Bonkers", "House of Mouse", "A Poem Is...", "The Wonderful World of Mickey Mouse", "Steamboat Silly"],
+    "videoGames": ["Disney's Villains' Revenge", "Kingdom Hearts (series)", "Kinect: Disneyland Adventures", "Disneyland Explorer", "Disney Infinity (series)", "Disney Tsum Tsum (game)", "Disney Emoji Blitz", "Disney Magic Kingdoms", "Disney Star Smash"],
+    "parkAttractions": ["Dumbo the Flying Elephant", "SpectroMagic", "Flights of Fantasy Parade", "World of Color", "Mickey Mouse Revue", "Celebrate the Magic", "Main Street Electrical Parade", "Fantasmic", "Festival of Fantasy Parade", "Happiness is Here Parade", "Gardens of Wonder"]
+  },
+  {
+    "_id": 455,
+    "name": "Bambi",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/ce/Profile_-_Bambi.png",
+    "films": ["Bambi (film)", "Bambi II", "Mickey's Magical Christmas: Snowed in at the House of Mouse"],
+    "shortFilms": ["Once Upon a Studio"],
+    "tvShows": ["House of Mouse", "A Poem Is..."],
+    "videoGames": ["Kingdom Hearts (series)", "Disney Tsum Tsum (game)", "Disney Emoji Blitz", "Disney Magic Kingdoms", "Disney Star Smash", "Disney My Little Doll"],
+    "parkAttractions": ["It's a Small World", "Fantasmic!", "World of Color", "Celebrate the Magic", "Main Street Electrical Parade", "Jingle Bell, Jingle BAM!", "Wondrous Journeys", "Drawn To Life", "Esperanza Character Carousel"]
+  },
+  {
+    "_id": 3771,
+    "name": "Kristoff",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/b4/Profile_-_Kristoff.jpeg",
+    "films": ["Frozen", "Frozen II", "Frozen III", "Frozen IV"],
+    "shortFilms": ["Frozen Fever", "Olaf's Frozen Adventure", "Once Upon a Snowman", "Once Upon a Studio"],
+    "tvShows": ["Frozen: Northern Lights"],
+    "videoGames": ["Frozen Free Fall", "Hidden Worlds", "Disney Magical Dice", "Disney Magic Kingdoms", "Disney Emoji Blitz", "Kingdom Hearts III", "Disney Getaway Blast", "Disney Sorcerer's Arena", "Disney Heroes: Battle Mode", "Disney Star Smash", "Disney Tsum Tsum (game)", "Disney Dreamlight Valley", "Disney Speedstorm"],
+    "parkAttractions": ["World of Color", "Mickey's Once Upon a Christmastime Parade", "Disney Dreams!", "A Frozen Holiday Wish", "Frozen Ever After", "Frozen: Live at the Hyperion", "Fantasmic!"]
+  },
+  {
+    "_id": 7026,
+    "name": "Ursula",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/72/Profile_-_Ursula.jpeg",
+    "films": ["The Little Mermaid (1989 film)", "Mickey's Magical Christmas: Snowed in at the House of Mouse", "Mickey's House of Villains", "Once Upon a Halloween"],
+    "shortFilms": ["The Simpsons: Welcome to the Club", "Once Upon a Studio"],
+    "tvShows": ["The Little Mermaid (TV series)", "House of Mouse", "The Wonderful World of Disney: The Little Mermaid Live!", "The Wonderful World of Mickey Mouse"],
+    "videoGames": ["The Little Mermaid (video game)", "Ariel: The Little Mermaid", "The Little Mermaid 2: Pinball Frenzy", "Kingdom Hearts (series)", "Disney Princess (video game)", "Disney Universe", "Disney Princess Enchanting Storybooks", "Disney Princess: My Fairytale Adventure", "Epic Mickey: Power of Illusion", "Hidden Worlds", "Disney Villains Challenge", "Disney Tsum Tsum (game)", "Disney Emoji Blitz", "Disney Magical Dice", "Disney Magic Kingdoms", "Disney Heroes: Battle Mode", "Disney Sorcerer's Arena", "Disney Mirrorverse", "Disney SpellStruck", "Disney Dreamlight Valley", "Disney Speedstorm", "Disney Pixel RPG"],
+    "parkAttractions": ["Fantasmic!", "Disney's Fantillusion", "Voyage of the Little Mermaid", "The Little Mermaid: Ariel's Undersea Adventure", "Starlight Dreams", "Walt Disney's Parade of Dreams", "Disney Magic on Parade", "Mickey's Boo-to-You Halloween Parade", "Sorcerers of the Magic Kingdom", "SpectroMagic", "The Golden Mickeys", "Disney Dreams", "World of Color", "Villains Night Out!", "Happily Ever After (fireworks show)", "Let's Get Wicked", "Disney's Not So Spooky Spectacular", "The Villains World", "Re-Villains! Halloween Parade", "The Villains' Halloween \"Into the Frenzy\"", "Disney Villains: Unfairly Ever After"]
+  },
+  {
+    "_id": 1044,
+    "name": "Captain Hook",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/0b/Profile_-_Captain_Hook.jpeg",
+    "films": ["Peter Pan (film)", "Return to Never Land", "Mickey's Magical Christmas: Snowed in at the House of Mouse", "Mickey's House of Villains", "Once Upon a Halloween", "The Pirate Fairy"],
+    "shortFilms": ["Electric Holiday", "The Simpsons: Welcome to the Club", "Once Upon a Studio"],
+    "tvShows": ["Walt Disney anthology series", "The Mouse Factory", "Raw Toonage", "House of Mouse", "Jake and the Never Land Pirates", "Playing with Skully"],
+    "videoGames": ["Mickey Mousecapade", "Return to Never Land (video game)", "Kingdom Hearts (game)", "Kingdom Hearts: Chain of Memories", "Kingdom Hearts: Birth by Sleep", "Disney Move", "Disney's Villains' Revenge", "Peter Pan: The Legend of Never Land", "Peter Pan: Adventures in Never Land", "Disney Universe", "Kinect: Disneyland Adventures", "Epic Mickey: Power of Illusion", "Disney Infinity (series)", "Hidden Worlds", "Disney Villains Challenge", "Disney Emoji Blitz", "Disney Magical Dice", "Disney Magic Kingdoms", "Disney Sorcerer's Arena", "Disney Heroes: Battle Mode", "Disney Mirrorverse", "Disney Magical World 2", "Disney SpellStruck", "wikipedia:Fortnite"],
+    "parkAttractions": ["Peter Pan's Flight", "Fantasmic!", "Dream Along With Mickey", "Magic, Music and Mayhem", "Back to Never Land", "One Man's Dream II: The Magic Lives On!", "Mickey's Soundsational Parade", "Mickey's Boo-to-You Halloween Parade", "Disney's Once Upon a Dream Parade", "Celebrate a Dreams Come True Parade", "Main Street Electrical Parade", "SpectroMagic", "Disney Dreams", "Midship Detective Agency", "Mickey's Pirates In The Caribbean", "Festival of Fantasy Parade", "World of Color", "Hocus Pocus Villain Spelltacular", "Cinderella's Surprise Celebration", "The Villains World", "Re-Villains! Halloween Parade", "Club Mouse Beat", "Peter Pan's Never Land Adventure", "The Villains' Halloween \"Into the Frenzy\"", "Disney Villains: Unfairly Ever After"]
+  },
+  {
+    "_id": 1681,
+    "name": "Cruella De Vil",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/92/Profile_-_Cruella.png",
+    "films": ["One Hundred and One Dalmatians", "Mickey's House of Villains", "101 Dalmatians II: Patch's London Adventure", "Once Upon a Halloween"],
+    "shortFilms": ["Electric Holiday", "The Simpsons in Plusaversary", "The Simpsons: Welcome to the Club", "Once Upon a Studio", "The Simpsons: The Most Wonderful Time of the Year"],
+    "tvShows": ["101 Dalmatians: The Series", "House of Mouse", "101 Dalmatian Street"],
+    "videoGames": ["Animated StoryBook: 101 Dalmatians", "101 Dalmatians: Escape from DeVil Manor", "102 Dalmatians: Puppies to the Rescue", "Disney Universe", "Disney Infinity (series)", "Disney Villains Challenge", "Disney Tsum Tsum (game)", "Disney Emoji Blitz", "Disney Magical Dice", "Disney Sorcerer's Arena", "Disney Star Smash", "Disney POP TOWN", "Disney Magic Kingdoms", "Disney Mirrorverse", "Illusion Island", "Disney Heroes: Battle Mode", "wikipedia:Fortnite", "Disney Speedstorm", "Disney Pixel RPG"],
+    "parkAttractions": ["Fantasmic!", "Scream and Shout Halloween Parade", "Disney's Maleficious Halloween Party", "Mickey's Boo-to-You Halloween Parade", "Sorcerers of the Magic Kingdom", "The Golden Mickeys", "Disney Stars and Motorcars Parade", "Midship Detective Agency", "World of Color", "Hocus Pocus Villain Spelltacular", "Fantasy Gardens", "Let's Get Wicked", "Villains Night Out!", "The Villains World", "Re-Villains! Halloween Parade", "The Villains' Halloween \"Into the Frenzy\"", "Disney Villains: Unfairly Ever After"]
   }
 ]

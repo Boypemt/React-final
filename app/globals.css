@@ -1,5 +1,85 @@
 @import "tailwindcss";
 
+/* ============================================================
+   Design System — Disney Clue Guesser (กลุ่ม Sigma)
+   ผู้ดูแล: เมธาสิทธิ์ พิบูลย์ศิลป์ (682110189)
+   ------------------------------------------------------------
+   Tailwind v4 ใช้ @theme ประกาศ Design Token แล้วมันจะ generate
+   utility class ให้เองอัตโนมัติ เช่น --color-brand-500 -> bg-brand-500
+
+   สำคัญ: @theme นี้ "เพิ่ม" token ใหม่เข้าไป ไม่ได้ลบ palette เดิมของ Tailwind
+   ดังนั้น class เดิมที่ components/game/* ใช้อยู่ (bg-slate-800, text-emerald-400,
+   bg-rose-500/20 ฯลฯ) ยังทำงานเหมือนเดิมทุกตัว ไม่มีอะไรพัง
+
+   ค่าสีเลือกให้ตรงกับที่ทีมใช้อยู่แล้ว เพื่อให้หน้าตาเป็นชุดเดียวกัน:
+     brand   = blue   (ปุ่มหลัก, ลิงก์)
+     accent  = indigo/purple (gradient หัวข้อ)
+     success = emerald (🟩 ตรงกันในตาราง Deduction)
+     danger  = rose    (🟥 ไม่ตรงกัน)
+     warning = amber   (⬆️⬇️ ลูกศรบอกมาก/น้อย)
+   ============================================================ */
+@theme {
+  /* ---------- Brand: สีหลักของแบรนด์ (โทนฟ้า) ---------- */
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+
+  /* ---------- Secondary: โทนอินดิโก (ปุ่มรอง, gradient) ---------- */
+  --color-secondary-300: #a5b4fc;
+  --color-secondary-400: #818cf8;
+  --color-secondary-500: #6366f1;
+  --color-secondary-600: #4f46e5;
+  --color-secondary-700: #4338ca;
+
+  /* ---------- Accent: โทนม่วง (ไฮไลต์, ข้อความ gradient) ---------- */
+  --color-accent-300: #d8b4fe;
+  --color-accent-400: #c084fc;
+  --color-accent-500: #a855f7;
+  --color-accent-600: #9333ea;
+
+  /* ---------- Surface: พื้นหลังและการ์ด (โทน slate) ---------- */
+  --color-surface-50: #f8fafc;
+  --color-surface-700: #334155;
+  --color-surface-800: #1e293b;
+  --color-surface-900: #0f172a;
+  --color-surface-950: #020617;
+
+  /* ---------- Muted: ข้อความรอง / เส้นขอบ ---------- */
+  --color-muted-300: #cbd5e1;
+  --color-muted-400: #94a3b8;
+  --color-muted-500: #64748b;
+  --color-muted-600: #475569;
+
+  /* ---------- Semantic: ให้ตรงกับ badge ในตาราง Deduction ---------- */
+  --color-success-400: #34d399; /* 🟩 ตรงกัน */
+  --color-success-500: #10b981;
+  --color-success-600: #059669;
+  --color-danger-400: #fb7185; /* 🟥 ไม่ตรงกัน */
+  --color-danger-500: #f43f5e;
+  --color-danger-600: #e11d48;
+  --color-warning-300: #fcd34d; /* ⬆️⬇️ มาก/น้อยกว่า */
+  --color-warning-400: #fbbf24;
+  --color-warning-500: #f59e0b;
+
+  /* ---------- Radius: ความโค้งมุมที่ใช้ซ้ำ ---------- */
+  --radius-card: 1rem; /* rounded-card — การ์ดทั่วไป */
+  --radius-pill: 9999px; /* rounded-pill — badge ทรงแคปซูล */
+
+  /* ---------- Font: ฟอนต์รองรับภาษาไทย ----------
+     ตัวแปร --font-thai มาจาก next/font/google ใน app/layout.jsx
+     การตั้ง --font-sans ที่นี่ทำให้ utility `font-sans` และ body
+     ใช้ฟอนต์ไทยเป็นค่าเริ่มต้น โดยมี system font เป็นตัวสำรอง
+     (ถ้าโหลดฟอนต์ไม่ได้ ตัวอักษรไทยก็ยังอ่านออก ไม่กลายเป็นกล่องสี่เหลี่ยม) */
+  --font-sans: var(--font-thai), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
 :root {
   --background: #0f172a;
   --foreground: #f8fafc;
@@ -8,11 +88,27 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  /* ใช้ token เดียวกับ @theme เพื่อไม่ให้ฟอนต์หลุดเป็น system font */
+  font-family: var(--font-sans);
   min-height: 100vh;
 }
 
-/* 3D Card Flip Animation Utility */
+/* ============================================================
+   Accessibility: เส้นกรอบตอนโฟกัสด้วยคีย์บอร์ด
+   ใช้ :focus-visible (ไม่ใช่ :focus) เพื่อให้ขึ้นเฉพาะตอนกด Tab
+   คนที่ใช้เมาส์คลิกจะไม่เห็นกรอบ — ได้ทั้งการเข้าถึงและความสวยงาม
+   ============================================================ */
+:focus-visible {
+  outline: 2px solid var(--color-brand-400);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ============================================================
+   3D Card Flip Animation Utility
+   ⚠️ ห้ามแก้ — components/game/MysteryCard.jsx ของปัณณวิชญ์ใช้อยู่
+   (perspective-1000, transform-style-3d, backface-hidden, rotate-y-180)
+   ============================================================ */
 .perspective-1000 {
   perspective: 1000px;
 }

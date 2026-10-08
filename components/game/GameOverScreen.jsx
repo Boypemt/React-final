@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import ScoreSubmissionForm from '@/components/ScoreSubmissionForm';
 
 export default function GameOverScreen({
   gameMode = 'deduction',
@@ -37,6 +38,7 @@ ${shareableEmojiGrid}
 
   const correctCount = roundHistory.filter(r => r.isCorrect).length;
   const totalRounds = roundHistory.length || 5;
+  const firstClueWins = roundHistory.filter((round) => round.isCorrect && round.cluesUsed === 1).length;
 
   return (
     <div className="w-full max-w-2xl mx-auto p-6 sm:p-8 rounded-2xl bg-slate-900/95 border border-slate-700/80 shadow-2xl text-center space-y-6">
@@ -168,8 +170,18 @@ ${shareableEmojiGrid}
           </span>
         </div>
         <p className="text-xs text-slate-300 mb-3">
-          คะแนนโหมด <span className="font-bold text-amber-300">{gameMode === 'deduction' ? 'Deduction Solo' : 'Trivia Time-Attack'}</span> พร้อมส่งขึ้น Route Handler <code className="text-amber-300">/api/scoreboard</code>
+          คะแนนโหมด <span className="font-bold text-amber-300">{gameMode === 'deduction' ? 'Deduction Solo' : 'Trivia Time-Attack'}</span> ส่งขึ้นกระดานผู้นำได้เลย
         </p>
+        <ScoreSubmissionForm
+          gameMode={gameMode}
+          score={totalScore}
+          timeSpentSeconds={totalTimeSpent}
+          guessesCount={gameMode === 'deduction'
+            ? guessesCount
+            : roundHistory.reduce((sum, round) => sum + round.guessesCount, 0)}
+          correctCount={gameMode === 'deduction' ? Number(isCorrect) : correctCount}
+          firstClueWins={firstClueWins}
+        />
         <div className="flex gap-2">
           <Link
             href="/scoreboard"
@@ -199,4 +211,3 @@ ${shareableEmojiGrid}
     </div>
   );
 }
-

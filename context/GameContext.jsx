@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useState, useCallback, useEffect } from 'react';
+import { createContext, useContext, useState, useCallback } from 'react';
 import curatedCharacters from '@/lib/data/curated-disney.json';
 import { getCharacterClues } from '@/lib/clues';
 import {
@@ -12,6 +12,7 @@ import {
   validateAnswer
 } from '@/lib/gameLogic';
 import { useSound } from '@/hooks/useSound';
+import { recordCompletedSession } from '@/lib/gameSessions';
 
 const GameContext = createContext(null);
 
@@ -139,23 +140,15 @@ export function GameProvider({ children, initialMode = 'deduction' }) {
         setTotalTimeSpent(elapsedSec);
         setShareableEmojiGrid(emojiGrid);
 
-        // บันทึกผลงานสำหรับสิรวิชญ์
-        if (typeof window !== 'undefined') {
-          try {
-            localStorage.setItem('disney_last_session', JSON.stringify({
-              gameMode: 'deduction',
-              score: earnedScore,
-              characterName: currentCharacter.name,
-              characterId: currentCharacter._id,
-              guessesCount: updatedHistory.length,
-              timeSpentSeconds: elapsedSec,
-              isCorrect: true,
-              completedAt: new Date().toISOString()
-            }));
-          } catch {
-            // fallback
-          }
-        }
+        recordCompletedSession({
+          gameMode: 'deduction',
+          score: earnedScore,
+          characterName: currentCharacter.name,
+          characterId: currentCharacter._id,
+          guessesCount: updatedHistory.length,
+          timeSpentSeconds: elapsedSec,
+          isCorrect: true,
+        });
 
         setGameState('GAME_OVER');
       } else {
@@ -208,22 +201,15 @@ export function GameProvider({ children, initialMode = 'deduction' }) {
     setTotalTimeSpent(elapsedSec);
     setGameState('GAME_OVER');
 
-    if (typeof window !== 'undefined') {
-      try {
-        localStorage.setItem('disney_last_session', JSON.stringify({
-          gameMode: 'deduction',
-          score: 0,
-          characterName: currentCharacter.name,
-          characterId: currentCharacter._id,
-          guessesCount: guessHistory.length,
-          timeSpentSeconds: elapsedSec,
-          isCorrect: false,
-          completedAt: new Date().toISOString()
-        }));
-      } catch {
-        // fallback
-      }
-    }
+    recordCompletedSession({
+      gameMode: 'deduction',
+      score: 0,
+      characterName: currentCharacter.name,
+      characterId: currentCharacter._id,
+      guessesCount: guessHistory.length,
+      timeSpentSeconds: elapsedSec,
+      isCorrect: false,
+    });
   }, [gameState, currentCharacter, playWrong, gameStartTime, guessHistory.length]);
 
   // กรณีเวลาหมด หรือข้ามด่านในโหมด Trivia
@@ -260,21 +246,16 @@ export function GameProvider({ children, initialMode = 'deduction' }) {
     } else {
       setGameState('GAME_OVER');
 
-      if (typeof window !== 'undefined') {
-        try {
-          const correctCount = roundHistory.filter(r => r.isCorrect).length;
-          localStorage.setItem('disney_last_session', JSON.stringify({
-            gameMode: 'trivia',
-            score: totalScore,
-            correctCount,
-            roundsPlayed: 5,
-            timeSpentSeconds: totalTimeSpent,
-            completedAt: new Date().toISOString()
-          }));
-        } catch {
-          // fallback
-        }
-      }
+      const correctRounds = roundHistory.filter((round) => round.isCorrect);
+      recordCompletedSession({
+        gameMode: 'trivia',
+        score: totalScore,
+        correctCount: correctRounds.length,
+        firstClueWins: correctRounds.filter((round) => round.cluesUsed === 1).length,
+        roundsPlayed: roundHistory.length,
+        timeSpentSeconds: totalTimeSpent,
+        isCorrect: correctRounds.length > 0,
+      });
     }
   }, [currentRound, loadTriviaRound, sessionCharacters, roundHistory, totalScore, totalTimeSpent]);
 

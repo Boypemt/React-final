@@ -41,6 +41,9 @@ const notoSansThai = Noto_Sans_Thai({
 export const metadata = {
   title: 'Disney Clue Guesser — เกมทายตัวละคร Disney ด้วยคำใบ้ AI',
   description: 'เกมทายชื่อตัวละคร Disney จากคำใบ้ AI และระบบเปรียบเทียบคุณลักษณะสไตล์ PokéGuesser',
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({ children }) {

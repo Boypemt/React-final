@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "name": "iq",
+    "gameMode": "deduction",
+    "score": 550,
+    "timeSpentSeconds": 88,
+    "guessesCount": 7,
+    "correctCount": 1,
+    "firstClueWins": 0,
+    "id": "01632158-f411-4b40-9912-f673efe410f0",
+    "submittedAt": "2026-10-09T04:32:35.324Z"
+  }
+]

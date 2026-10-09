@@ -1,6 +1,10 @@
 import { NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
-import { saveScoreEntry } from '@/lib/scoreboardStore';
+import {
+  saveScoreEntry,
+  ScoreboardStorageConfigurationError,
+  ScoreboardStorageUnavailableError,
+} from '@/lib/scoreboardStore';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -54,6 +58,13 @@ export async function POST(request) {
     return NextResponse.json({ entry: savedEntry }, { status: 201 });
   } catch (error) {
     console.error('Unable to save scoreboard entry.', error);
-    return NextResponse.json({ error: 'บันทึกคะแนนไม่สำเร็จ กรุณาลองอีกครั้ง' }, { status: 500 });
+    const status = error instanceof ScoreboardStorageConfigurationError ||
+      error instanceof ScoreboardStorageUnavailableError
+      ? 503
+      : 500;
+    return NextResponse.json(
+      { error: 'ระบบจัดเก็บคะแนนไม่พร้อมใช้งาน กรุณาลองอีกครั้งภายหลัง' },
+      { status }
+    );
   }
 }

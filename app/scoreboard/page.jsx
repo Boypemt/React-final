@@ -9,7 +9,7 @@ export const metadata = {
   title: 'กระดานผู้นำ — Disney Guesser',
   description: 'ดูอันดับคะแนนสูงสุดของผู้เล่น Disney Character Clue Guesser',
 };
-export const revalidate = 30;
+export const dynamic = 'force-dynamic';
 
 const MODES = [
   { value: 'all', label: 'ทุกโหมด' },

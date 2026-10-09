@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/Button';
+import { saveScoreEntry } from '@/lib/scoreboardStorage';
 
 export default function ScoreSubmissionForm({
   gameMode,
@@ -16,34 +17,24 @@ export default function ScoreSubmissionForm({
   const [status, setStatus] = useState('idle');
   const [errorMessage, setErrorMessage] = useState('');
 
-  async function handleSubmit(event) {
+  function handleSubmit(event) {
     event.preventDefault();
     setStatus('submitting');
     setErrorMessage('');
 
     try {
-      const response = await fetch('/api/scoreboard', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name,
-          gameMode,
-          score,
-          timeSpentSeconds,
-          guessesCount,
-          correctCount,
-          firstClueWins,
-        }),
+      saveScoreEntry({
+        name,
+        gameMode,
+        score,
+        timeSpentSeconds,
+        guessesCount,
+        correctCount,
+        firstClueWins,
       });
-      const result = await response.json();
-
-      if (!response.ok) {
-        throw new Error(result.error || 'บันทึกคะแนนไม่สำเร็จ');
-      }
-
       setStatus('saved');
     } catch (error) {
-      setErrorMessage(error instanceof Error ? error.message : 'เชื่อมต่อไม่สำเร็จ กรุณาลองอีกครั้ง');
+      setErrorMessage(error instanceof Error ? error.message : 'บันทึกคะแนนไม่สำเร็จ กรุณาลองอีกครั้ง');
       setStatus('error');
     }
   }
@@ -52,7 +43,7 @@ export default function ScoreSubmissionForm({
     return (
       <div className="space-y-3" role="status">
         <Badge tone="success">บันทึกคะแนนแล้ว</Badge>
-        <p className="text-sm text-muted-300">คะแนนของคุณถูกส่งขึ้นกระดานผู้นำเรียบร้อย</p>
+        <p className="text-sm text-muted-300">บันทึกคะแนนไว้ในเบราว์เซอร์นี้แล้ว</p>
         <Button href="/scoreboard" size="sm">ดูอันดับของคุณ</Button>
       </div>
     );

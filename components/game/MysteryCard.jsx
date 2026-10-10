@@ -2,8 +2,25 @@
 
 import { useState } from 'react';
 
-export default function MysteryCard({ character, isSolved = false, revealedLevel = 1 }) {
-  const [imgError, setImgError] = useState(false);
+/**
+ * การ์ดเงาปริศนา
+ *
+ * [ด้านหน้า] ใช้ silhouetteUrl ซึ่งชี้ไปที่ GET /api/game/silhouette?token=...
+ *   ของเดิมใส่ URL จริงของรูปลงใน src แล้วทำให้ดำด้วย CSS filter
+ *   แต่ filter เป็นแค่การตกแต่งภาพ ไม่ได้ปิดข้อมูล — เปิด Elements tab อ่าน src ได้
+ *   และชื่อไฟล์รูปมักมีชื่อตัวละครติดมาด้วย (เช่น Disney_Mickey_Mouse.png) = เฉลยฟรี
+ *   ตอนนี้ Server โหลดรูปมาส่งต่อให้ ทำให้เบราว์เซอร์เห็นแค่ซองที่อ่านไม่ออก
+ *
+ * [ด้านหลัง] ใช้ character.imageUrl ได้ตามปกติ เพราะกรณีนี้คือ "เฉลยแล้ว"
+ *   (Server ส่ง character มาให้เฉพาะตอนทายถูก / ยอมแพ้ / หมดเวลา)
+ */
+export default function MysteryCard({
+  silhouetteUrl = null,
+  character = null,
+  isSolved = false,
+  revealedLevel = 1,
+}) {
+  const [revealedImgError, setRevealedImgError] = useState(false);
 
   // คำนวณความสว่างของเงาตามจำนวนคำใบ้ที่เปิด (เปิดเยอะขึ้น เงามัวเริ่มจางลงเล็กน้อย)
   let silhouetteFilter = 'brightness(0) contrast(200%)';
@@ -11,23 +28,27 @@ export default function MysteryCard({ character, isSolved = false, revealedLevel
   if (revealedLevel >= 3) silhouetteFilter = 'brightness(0.3) contrast(120%) blur(0.5px)';
 
   const fallbackImage = 'https://static.wikia.nocookie.net/disney/images/2/2e/Disney_Mickey_Mouse.png';
-  const displayImage = imgError || !character?.imageUrl ? fallbackImage : character.imageUrl;
+  const revealedImage =
+    revealedImgError || !character?.imageUrl ? fallbackImage : character.imageUrl;
 
   return (
     <div className="perspective-1000 w-48 h-56 sm:w-56 sm:h-64 mx-auto my-3">
       <div className={`relative w-full h-full duration-700 transform-style-3d transition-transform ${isSolved ? 'rotate-y-180' : ''}`}>
-        
+
         {/* ด้านหน้า: Mystery Silhouette Card (ยังไม่เฉลย) */}
         <div className="absolute inset-0 backface-hidden rounded-2xl bg-gradient-to-b from-slate-800 to-slate-900 border-2 border-slate-700 p-4 flex flex-col items-center justify-center shadow-xl">
           <div className="relative w-36 h-36 sm:w-44 sm:h-44 flex items-center justify-center overflow-hidden">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={displayImage}
-              alt="Mystery Character Silhouette"
-              className="max-w-full max-h-full object-contain transition-all duration-500 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]"
-              style={{ filter: silhouetteFilter }}
-              onError={() => setImgError(true)}
-            />
+            {/* ไม่มี silhouetteUrl (ยังไม่เริ่มรอบ) ก็ไม่ต้องเรนเดอร์ <img> เลย
+                ไม่ใช้รูป fallback ของตัวละครจริง เพราะจะกลายเป็นการเฉลยผิด ๆ */}
+            {silhouetteUrl && (
+              /* eslint-disable-next-line @next/next/no-img-element */
+              <img
+                src={silhouetteUrl}
+                alt="Mystery Character Silhouette"
+                className="max-w-full max-h-full object-contain transition-all duration-500 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]"
+                style={{ filter: silhouetteFilter }}
+              />
+            )}
             {/* เครื่องหมาย ? ปริศนา ตรงกลาง */}
             <div className="absolute inset-0 flex items-center justify-center">
               <span className="text-5xl sm:text-6xl font-black text-amber-400/90 drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)] select-none animate-pulse">
@@ -43,13 +64,16 @@ export default function MysteryCard({ character, isSolved = false, revealedLevel
         {/* ด้านหลัง: Revealed Card (เฉลยเมื่อทายถูก) */}
         <div className="absolute inset-0 backface-hidden rotate-y-180 rounded-2xl bg-gradient-to-b from-blue-900/60 to-indigo-950/80 border-2 border-emerald-500/80 p-4 flex flex-col items-center justify-center shadow-2xl shadow-emerald-500/20">
           <div className="relative w-36 h-36 sm:w-44 sm:h-44 flex items-center justify-center overflow-hidden">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={displayImage}
-              alt={character?.name || 'Disney Character'}
-              className="max-w-full max-h-full object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.6)]"
-              onError={() => setImgError(true)}
-            />
+            {/* ด้านนี้แสดงเฉพาะตอนเฉลยแล้ว จึงใส่รูปจริงและชื่อจริงได้ */}
+            {character && (
+              /* eslint-disable-next-line @next/next/no-img-element */
+              <img
+                src={revealedImage}
+                alt={character.name || 'Disney Character'}
+                className="max-w-full max-h-full object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.6)]"
+                onError={() => setRevealedImgError(true)}
+              />
+            )}
           </div>
           <h3 className="mt-2 text-base sm:text-lg font-black text-emerald-300 tracking-wide text-center truncate w-full">
             {character?.name}

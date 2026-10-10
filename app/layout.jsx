@@ -39,6 +39,7 @@ const notoSansThai = Noto_Sans_Thai({
 });
 
 export const metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://disney-clue-guesser.vercel.app'),
   title: 'Disney Clue Guesser — เกมทายตัวละคร Disney ด้วยคำใบ้ AI',
   description: 'เกมทายชื่อตัวละคร Disney จากคำใบ้ AI และระบบเปรียบเทียบคุณลักษณะสไตล์ PokéGuesser',
   icons: {

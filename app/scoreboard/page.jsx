@@ -3,7 +3,19 @@ import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/Button';
 import Card from '@/components/ui/Card';
 import PageHeader from '@/components/ui/PageHeader';
-import ScoreboardEntries from '@/components/ScoreboardEntries';
+import ScoreboardTable from '@/components/ScoreboardTable';
+import { getEntries, isPersistenceDegraded } from '@/lib/scoreboardStore';
+
+/**
+ * app/scoreboard/page.jsx — กระดานผู้นำ
+ *
+ * [ทำไมเป็น Server Component และเป็น Dynamic?]
+ *   อ่านคะแนนจากคลังฝั่ง Server (lib/scoreboardStore.js) ตรง ๆ ได้เลย
+ *   ไม่ต้องยิง fetch ไปหา API ของตัวเอง และไม่ต้องส่ง JS ไปให้เบราว์เซอร์
+ *   หน้านี้เป็น Dynamic โดยอัตโนมัติเพราะใช้ `await searchParams` (ตัวกรองอยู่บน URL)
+ *   จึงอ่านข้อมูลสดทุกครั้งที่เปิด และเมื่อมีคนส่งคะแนนใหม่ Server Action
+ *   จะเรียก revalidatePath('/scoreboard') ล้างแคชให้ด้วยอีกชั้น
+ */
 
 export const metadata = {
   title: 'กระดานผู้นำ — Disney Guesser',
@@ -32,6 +44,9 @@ export default async function ScoreboardPage({ searchParams }) {
   const params = await searchParams;
   const mode = ['deduction', 'trivia'].includes(params?.mode) ? params.mode : 'all';
   const period = ['week', 'month'].includes(params?.period) ? params.period : 'all';
+
+  // อ่านข้อมูลฝั่ง Server — ตัวกรองถูกใช้ตอน query ไม่ใช่ตอน render
+  const entries = await getEntries({ mode, period });
 
   return (
     <main className="flex-1 pb-12">
@@ -69,7 +84,7 @@ export default async function ScoreboardPage({ searchParams }) {
           </div>
         </Card>
 
-        <ScoreboardEntries mode={mode} period={period} />
+        <ScoreboardTable entries={entries} persistedToDisk={!isPersistenceDegraded()} />
       </div>
     </main>
   );

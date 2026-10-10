@@ -11,9 +11,12 @@
   },
   "dependencies": {
     "@google/genai": "^2.27.0",
+    "@hookform/resolvers": "^5.9.1",
     "next": "^15.2.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.89.0",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.0",

@@ -25,6 +25,7 @@ import { usePathname } from 'next/navigation';
 const LINKS = [
   { href: '/', label: 'หน้าแรก', icon: '🏠' },
   { href: '/play', label: 'เล่นเกม', icon: '🎮' },
+  { href: '/characters', label: 'สารานุกรม', icon: '📖' },
   { href: '/scoreboard', label: 'อันดับ', icon: '🏆' },
   { href: '/achievement', label: 'เหรียญรางวัล', icon: '🏅' },
 ];

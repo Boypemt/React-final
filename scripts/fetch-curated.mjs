@@ -27,12 +27,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const TARGET_FILE = path.join(__dirname, '..', 'lib', 'data', 'curated-disney.json');
 
 const API_BASE = 'https://api.disneyapi.dev';
-const REQUEST_GAP_MS = 300;
-const TARGET_NEW_COUNT = 25;
+const REQUEST_GAP_MS = 150;
+const TARGET_NEW_COUNT = process.argv[2] ? parseInt(process.argv[2], 10) : 50;
 
 /**
  * รายชื่อผู้สมัคร เรียงตามลำดับความสำคัญ
- * ใส่เผื่อไว้มากกว่า 25 ชื่อ เพราะบางตัวอาจไม่ผ่านเกณฑ์ (ไม่มีรูป / ไม่มีหนัง / ชื่อซ้ำ)
+ * ใส่เผื่อไว้จำนวนมาก เพื่อคัดเฉพาะตัวที่ข้อมูลครบและรูปเปิดได้ (HTTP 200)
  * จัดส่วนผสมให้สมดุล: พระเอก-นางเอก / ตัวร้าย / ตัวประกอบคู่หู
  * และกระจายอักษรตัวแรกให้หลากหลาย เพื่อให้การเทียบ "อักษรแรก A-Z" ในโหมด Deduction สนุก
  */
@@ -42,14 +42,42 @@ const CANDIDATES = [
   'Pocahontas', 'Tarzan', 'Tinker Bell', 'Winnie the Pooh', 'Tigger',
   'Goofy', 'Donald Duck', 'Minnie Mouse', 'Genie', 'Jasmine', 'Mowgli',
   'Tiana', 'Merida', 'Nemo', 'Dory', 'Dumbo', 'Bambi', 'Kristoff',
-  // ตัวร้าย
+  // ตัวร้าย / ปรปักษ์
   'Ursula', 'Captain Hook', 'Cruella De Vil', 'Gaston', 'Mother Gothel',
-  'Shere Khan', 'Yzma', 'Queen of Hearts', 'Dr. Facilier',
-  // ตัวประกอบ / คู่หู
-  'Timon', 'Pumbaa', 'Mufasa', 'Nala', 'Rafiki', 'Zazu', 'Sebastian',
-  'Mrs. Potts', 'Lumiere', 'Eeyore', 'Piglet', 'Pluto', 'Daisy Duck',
-  'Alice', 'Wendy Darling', 'Mike Wazowski', 'Sulley', 'Remy',
-  'Lightning McQueen', 'WALL-E',
+  'Shere Khan', 'Yzma', 'Queen of Hearts', 'Dr. Facilier', 'Evil Queen',
+  'Lady Tremaine', 'Jafar', 'Scar', 'Hades', 'Maleficent', 'Shan Yu',
+  'Prince John', 'Clayton', 'King Candy', 'Yokai', 'Bellwether',
+  // ตัวประกอบ / คู่หู / เพื่อนแท้
+  'Timon', 'Pumbaa', 'Mufasa', 'Nala', 'Rafiki', 'Zazu',
+  'Sebastian', 'Flounder', 'Scuttle', 'King Triton',
+  'Mrs. Potts', 'Lumiere', 'Cogsworth', 'LeFou',
+  'Eeyore', 'Piglet', 'Rabbit', 'Owl', 'Kanga', 'Roo',
+  'Pluto', 'Daisy Duck', 'Pete', 'Chip', 'Dale',
+  'Alice', 'Wendy Darling', 'Mad Hatter', 'Cheshire Cat', 'White Rabbit',
+  'Sven', 'Hans', 'Pascal', 'Maximus', 'Mr. Smee',
+  'Grumpy', 'Dopey', 'Doc',
+  'Prince Phillip', 'Flora', 'Fauna', 'Merryweather',
+  'Fairy Godmother', 'Prince Charming', 'Jaq', 'Gus',
+  'Geppetto', 'Jiminy Cricket',
+  'Megara', 'Philoctetes', 'Pegasus', 'Pain', 'Panic',
+  'Mushu', 'Li Shang',
+  'Jane Porter', 'Kala', 'Tantor',
+  'John Smith', 'Meeko', 'Percy',
+  'Prince Naveen', 'Louis', 'Ray',
+  'Robin Hood', 'Little John', 'Maid Marian',
+  'Pongo', 'Perdita',
+  'Bagheera', 'King Louie', 'Kaa',
+  'Duchess', 'Marie',
+  'Lady', 'Tramp',
+  'Tod', 'Copper',
+  'Hiro Hamada', 'Go Go Tomago', 'Wasabi', 'Honey Lemon', 'Fred',
+  'Nick Wilde', 'Chief Bogo', 'Clawhauser', 'Flash',
+  'Wreck-It Ralph', 'Vanellope von Schweetz',
+  'Mirabel Madrigal', 'Isabela Madrigal', 'Luisa Madrigal', 'Bruno Madrigal',
+  'Raya', 'Sisu',
+  'Kronk', 'Pacha',
+  'Pleakley', 'Jumba Jookiba',
+  'Mike Wazowski', 'Sulley', 'Remy', 'Lightning McQueen', 'WALL-E',
 ];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
